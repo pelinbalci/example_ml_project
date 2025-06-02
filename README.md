@@ -50,6 +50,24 @@ customer-churn-prediction/
 # Navigate to project directory
 cd customer-churn-prediction
 
+```
+
+--> OPTIONAL BUT IMPORTANT STEP <--
+
+You can create a virtual environment for the libraries. So that, you will not install "pandas" library to your global python, 
+but only install for this project. Creating virtual environment will help you manage the library dependencies. You can use 
+pandas latest version 2.2.3 in one project. But in another project the latest pandas version can't be used in another library so you need 
+to use 2.2.1 for another project. That's why you need virtual environment. 
+
+```bash
+python3 -m venv .venv # Replace .venv with your preferred environment name.
+source .venv/bin/activate  # Activate your virtual environment
+
+```
+
+Install required libraries:
+
+```bash
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -225,6 +243,6 @@ pip install -r requirements.txt
 
 ---
 
-**Need Help?** Contact the Data Science team or create an issue in this repository.
+**Need Help?** Create an issue in this repository.
 
 **Last Updated:** June 2025
